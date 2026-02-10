@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWS Mesujikab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #818cf8;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            margin: 0;
+            padding-bottom: 60px;
+        }
+
+        /* 1. Header Banner */
+        .header-banner {
+            width: 100%;
+            height: 220px;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(15,23,42,1)), 
+                              url('https://i.ibb.co.com/ZRQLkj67/foto-bersama.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* 2. Profil Logo (Melingkar) */
+        .profile-section {
+            margin-top: -80px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1e293b;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            background-color: #fff;
+        }
+
+        .profile-name {
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 1.75rem;
+        }
+
+        .profile-bio {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            max-width: 450px;
+            margin: 8px auto 35px;
+        }
+
+        /* 3. Tombol Link */
+        .links-container {
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn-custom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 16px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 500;
+        }
+
+        .btn-custom:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-4px);
+            color: #fff;
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* 4. Social Media Icons */
+        .social-icons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .social-icons a {
+            color: #94a3b8;
+            font-size: 1.6rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--primary-color);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-banner"></div>
+
+    <div class="container profile-section">
+        <img src="https://i.ibb.co.com/KzFTJxhP/cws-PP-Mesuji.png" alt="Profile Picture" class="profile-img">
+        
+        <h2 class="profile-name">CWS Mesujikab</h2>
+        <p class="profile-bio">Manajemen Kepegawaian Penyuluh Kab. Mesuji</p>
+
+        <div class="links-container">
+            <a href="https://linktr.ee/admkepeg4" class="btn-custom">
+                <span>Arsip Kepegawaian Kementan</span>
+            </a>
+            <a href="https://drive.google.com/drive/folders/1wUnQdxjrrd33EGejvcJ2qdVzsOtvqu-t?usp=sharing" class="btn-custom">
+                <span>Arsip SKP 2024 - 2025</span>
+            </a>
+            <a href="https://drive.google.com/drive/folders/14Sm4wz7JPie8BCHsehL8wJDTzB3WXsXG?usp=sharing" class="btn-custom">
+                <span>Arsip Absensi Penyuluh</span>
+            </a>
+            <a href="https://sites.google.com/view/elttmesuji/home" class="btn-custom">
+                <span>Aplikasi eLTT CWS Mesuji</span>
+            </a>
+			<a href="#" class="btn-custom">
+                <span>Aplikasi Demografi</span>
+            </a>
+			<a href="#" class="btn-custom">
+                <span>Download</span>
+            </a>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
