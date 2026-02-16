@@ -114,6 +114,16 @@
             color: var(--primary-color);
             transform: scale(1.2);
         }
+		/* Mendefinisikan animasi kedip */
+		  @keyframes blinker {
+		    50% { opacity: 0; }
+		  }
+		
+		  .text-berkedip {
+		    animation: blinker 1s linear infinite;
+		    color: green; /* Warna teks */
+		    font-weight: bold;
+		  }
     </style>
 </head>
 <body>
@@ -139,16 +149,16 @@
 			<a href="https://drive.google.com/drive/folders/119VThwL5ffyzkOvJhwL8PnRZhaDW30S-?usp=sharing" target="_blank" class="btn-custom">
                 <span>Arsip LCS Penyuluh</span>
             </a>
+			<a href="https://muaddinmsj-83.github.io/eSurat-CWS/" target="_blank" class="btn-custom">
+                <span>eSurat CWS <p class="text-berkedip">(Khusu KORLUH!)</p></span>
+            </a>
             <a href="https://sites.google.com/view/elttmesuji/home" target="_blank" class="btn-custom">
-                <span>Aplikasi eLTT CWS Mesuji</span>
+                <span>eLTT CWS Mesuji</span>
             </a>
 			<a href="https://sites.google.com/view/cws-mesujikab/cws-apps" target="_blank" class="btn-custom">
-                <span>Aplikasi Demografi</span>
+                <span>Aplikasi Klasifikasi Umur</span>
             </a>
-			<a href="https://drive.google.com/drive/folders/1S0Tlcspe6Hilgjo7ShZNvUpPL9y-eF4A?usp=sharing" target="_blank" class="btn-custom">
-                <span>Download</span>
-            </a>
-        </div>
+		</div>
 
         <div class="social-icons">
             <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
